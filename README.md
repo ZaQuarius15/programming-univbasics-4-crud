@@ -254,5 +254,9 @@ other way around.
 
 ## Conclusion
 
+Create, retrieve, update, and delete operations are fundamental to working with data. Being able to quickly manipulate and read data out of them is vital to success in building stuff with computers.
+
+
+
 ## Resources
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p>
