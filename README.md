@@ -1,4 +1,4 @@
-# Basic Arrays: Creating, Retrieving, Updating and Deleting
+# Array Basics: Creating, Retrieving, Updating and Deleting
 
 ## Learning Goals
 
