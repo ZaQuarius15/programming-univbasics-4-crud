@@ -2,31 +2,29 @@
 
 ## Learning Goals
 
-- Create and populate an array
-- Add items to an array using different methods
-- Remove items from an array using different methods
-- Operate on an array using the sort, reverse, and include methods
-- Identify elements in an array based on their index number
+- Create an array
+- Add items to an array
+- Remove items from an array
 - Retrieve items from an array
-- Reference the Ruby documentation on arrays
+- Identify elements in an array based on their index number
 
 ## Introduction
 
-This lesson will give a deeper dive on how to create, manipulate, and retrieve
-data from arrays.
+Conceptually, we know what arrays are and what they look like. Now we can learn
+details like how to create, manipulate, and retrieve data from arrays.
 
-## Creating an Array
+## Create an Array
 
-There are a few different ways to make a new array. You can use the literal
-constructor or the class constructor.
+There are a few different ways to make a new array. You can use the _literal_
+constructor or the _class_ constructor.
 
-##### The Literal Constructor
+### The Literal Constructor
 
 ```ruby
 my_array = []
 ```
 
-##### The Class Constructor
+### The Class Constructor
 
 ```ruby
 my_array = Array.new
@@ -35,11 +33,10 @@ my_array = Array.new
 
 **Advanced:** *Don't worry about the class constructor right now. We'll learn
 much more about this later on. We're introducing it briefly here because you may
-encounter this syntax if you read through other resources you might find
-online.*
+encounter this syntax in other resources.*
 
 To make an array that isn't empty, you can separate each item, known as an
-element, by a `,` ("comma") and wrap all the elements inside `[``]` ("square
+_element_, by a `,` ("comma") and wrap all the elements inside `[``]` ("square
 brackets").
 
 ```ruby
@@ -53,20 +50,20 @@ mixed = ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
 #  └── ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
 ```
 
-It is possible to create an array that contains disparate data types. In other
-words, you could create an array like the one above, that stores both strings
-and integers. This is generally discouraged, however. It's best to keep your
+It is possible to create an array that contains different data types. In other
+words, you could create an array like the one above that stores both strings
+and integers. However, this is generally discouraged. It's best to keep your
 arrays populated with only one kind of element.
 
-## Adding Items to an Array
+## Add Items to an Array
 
 If an array is a storage container for a list of data, then we can imagine
 adding and removing individual items. Let's take a look at how we can add
 elements to an array.
 
-### Shovel Method
+### The Shovel Method
 
-The shovel method employs the "shovel" operator (`<<`) and allows you to add
+The **shovel** method employs the "shovel" operator (`<<`) and allows you to add
 ("shovel") items onto the *end* of an array:
 
 ```ruby
@@ -84,7 +81,7 @@ representation of an object. In this case, the list of the strings held in the
 array.*
 
 The shovel method (`<<`) is the preferred syntax for adding elements to an
-array, however you might see other methods used in examples online:
+array, however you might see other methods used in examples online.
 
 ### The `.push` Method
 
@@ -116,7 +113,7 @@ puts famous_cats.inspect
 
 ```
 
-## Removing Items From an Array
+## Remove Items from an Array
 
 ### The `.pop` Method
 
@@ -148,11 +145,11 @@ puts lil_bub
 # > lil' bub
 ```
 
-*Note:* If you want to remove items that are not at the beginning or end of an
+**Note:** If you want to remove items that are not at the beginning or end of an
 array, use the [Ruby documentation](http://docs.ruby-lang.org/en/2.0.0/Array.html#method-i-delete_at)
 to figure out how.
 
-## Retrieving Items from Array
+## Retrieve Items from Array
 
 When you write out a list on a notepad, you typically write each item on its own
 line. Whether or not the list is explicitly numbered, the list has a numerology
@@ -198,40 +195,7 @@ famous_cats[-1]
 # └── "Garfield"
 ```
 
-#### Bonus: Using Methods
-
-We can also use the `#first` method on an array to access the first element:
-
-```ruby
-famous_cats.first
-# └── "Cheshire Cat"
-```
-
-We can use the `#last` method to access the last element:
-
-```ruby
-famous_cats.last
-# └── "Garfield
-```
-
-#### A Note on Index Numbers
-
-What happens when we try to access the element stored in an index that doesn't
-exist? In other words, let's say we have our `famous_cats` array that contains
-three elements. That means that our array contains an element at indexes `0`,
-`1`, and `2`. What happens if we try to access an element at index `3`? An index
-element that doesn't exist.
-
-Let's take a look:
-
-```ruby
-famous_cats[3]
-#  └── nil
-```
-
-It returns `nil`!
-
-#### Advanced: Finding An Element's Index With `.index()`
+## Identify Elements in an Array Based on Their Index Number
 
 To discover the index number of an element within an array, we can use the
 `.index()` method. Calling `.index()` on an array with an argument inside the
@@ -252,11 +216,29 @@ This is not an operation you will perform very often. Arrays are used to store
 data and usually you will use the index number of an item to access it, not the
 other way around.
 
+### A Note on Index Numbers
+
+What happens when we try to access the element stored in an index that doesn't
+exist? In other words, let's say we have our `famous_cats` array that contains
+three elements. That means that our array contains an element at indexes `0`,
+`1`, and `2`. What happens if we try to access an element at index `3`? An index
+element that doesn't exist.
+
+Let's take a look:
+
+```ruby
+famous_cats[3]
+#  └── nil
+```
+
+It returns `nil`!
+
 ## Conclusion
 
-Create, retrieve, update, and delete operations are fundamental to working with data. Being able to quickly manipulate and read data out of them is vital to success in building stuff with computers.
-
-
+Create, retrieve, update, and delete operations are fundamental to working with
+data. Being able to quickly manipulate and read data out of them is vital to
+successful programming.
 
 ## Resources
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p>
