@@ -36,7 +36,7 @@ much more about this later on. We're introducing it briefly here because you may
 encounter this syntax in other resources.*
 
 To make an array that isn't empty, you can separate each item, known as an
-_element_, by a `,` ("comma") and wrap all the elements inside `[``]` ("square
+_element_, by a `,` ("comma") and wrap all the elements inside `[]` ("square
 brackets").
 
 ```ruby
@@ -54,6 +54,12 @@ It is possible to create an array that contains different data types. In other
 words, you could create an array like the one above that stores both strings
 and integers. However, this is generally discouraged. It's best to keep your
 arrays populated with only one kind of element.
+
+Remember we're saying that arrays hold collections of similar things: band
+member names, digits of a phone number, etc. Other programmers will likely
+want to visit each _element_. If I'm totalling an array called `prices`, and the
+`String` `"baby shark"` is inside, I'm not going to get the result I expect when
+I try to add up the total of all the prices.
 
 ## Add Items to an Array
 
@@ -75,10 +81,6 @@ puts famous_cats.inspect
 # > ["lil' bub", "grumpy cat", "Maru", "nala cat"]
 
 ```
-
-**Note:** *The* `.inspect` *method returns a string containing a human-readable
-representation of an object. In this case, the list of the strings held in the
-array.*
 
 The shovel method (`<<`) is the preferred syntax for adding elements to an
 array, however you might see other methods used in examples online.
