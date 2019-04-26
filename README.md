@@ -41,13 +41,13 @@ brackets").
 
 ```ruby
 puppies = ["bulldog", "terrier", "poodle"]
-#  └── ["bulldog", "terrier", "poodle"]
+#  > ["bulldog", "terrier", "poodle"]
 
 random_numbers = [ 2, 5, 6, 8, 30050]
-#  └── [ 2, 5, 6, 8, 30050]
+#  > [ 2, 5, 6, 8, 30050]
 
 mixed = ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
-#  └── ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
+#  > ["this", "array", 7, 20, "has", 45, "integers", "&", "strings", 309]
 ```
 
 It is possible to create an array that contains different data types. In other
@@ -176,13 +176,13 @@ brackets (`[]`).
 famous_cats =  ["Cheshire Cat", "Puss in Boots", "Garfield"]
 
 famous_cats[1]
-#  └── "Puss in Boots"
+#  > "Puss in Boots"
 
 famous_cats[0]
-#  └── "Cheshire Cat"
+#  > "Cheshire Cat"
 
 famous_cats[2]
-#  └── "Garfield"
+#  > "Garfield"
 ```
 
 We can also access array elements by using negative index numbers. The last item
@@ -191,7 +191,7 @@ shot:
 
 ```ruby
 famous_cats[-1]
-# └── "Garfield"
+# > "Garfield"
 ```
 
 ## Identify Elements in an Array Based on Their Index Number
@@ -205,10 +205,10 @@ argument. If no elements match the argument, then this method will return `nil`.
 famous_cats = ["Cheshire Cat", "Puss in Boots", "Garfield"]
 
 famous_cats.index("Puss in Boots")
-#  └── 1
+#  > 1
 
 famous_cats.index("Maru")
-#  └── nil
+#  > nil
 ```
 
 This is not an operation you will perform very often. Arrays are used to store
@@ -227,7 +227,7 @@ Let's take a look:
 
 ```ruby
 famous_cats[3]
-#  └── nil
+#  > nil
 ```
 
 It returns `nil`!
