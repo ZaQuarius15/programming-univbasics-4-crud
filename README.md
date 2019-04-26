@@ -28,7 +28,7 @@ my_array = []
 
 ```ruby
 my_array = Array.new
-#  └── []
+#  > []
 ```
 
 **Advanced:** _Don't worry about the class constructor right now. We'll learn
