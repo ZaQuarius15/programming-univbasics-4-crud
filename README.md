@@ -77,7 +77,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 
 famous_cats << "nala cat"
 
-puts famous_cats.inspect
+p famous_cats
 # > ["lil' bub", "grumpy cat", "Maru", "nala cat"]
 ```
 
@@ -94,7 +94,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 
 famous_cats.push("nala cat")
 
-puts famous_cats.inspect
+p famous_cats
 # > ["lil' bub", "grumpy cat", "Maru", "nala cat"]
 ```
 
@@ -108,7 +108,7 @@ famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 
 famous_cats.unshift("nala cat")
 
-puts famous_cats.inspect
+p famous_cats
 # > ["nala cat", "lil' bub", "grumpy cat", "Maru"]
 ```
 
@@ -123,9 +123,9 @@ array. The `.pop` method will also supply the removed element as its return:
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 maru_cat = famous_cats.pop
 
-puts famous_cats.inspect
+p famous_cats
 # > ["lil' bub", "grumpy cat"]
-puts maru_cat
+p maru_cat
 # > Maru
 ```
 
@@ -138,9 +138,9 @@ the array. The `.shift` method will also supply the removed element as a return:
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
 lil_bub = famous_cats.shift
 
-puts famous_cats.inspect
+p famous_cats
 # > ["grumpy cat", "Maru"]
-puts lil_bub
+p lil_bub
 # > lil' bub
 ```
 
