@@ -7,6 +7,7 @@
 - Remove items from an array
 - Retrieve items from an array
 - Identify elements in an array based on their index number
+- Update Array element value using its index number
 
 ## Introduction
 
@@ -242,6 +243,31 @@ No programmer knows all the methods that are built-in to Ruby's Array class.
 Although it is handy to practice and become familiar with methods like `.push`,
 `.shift`, `.unshift`, and `.pop`, it is entirely normal to rely on the
 documentation, no matter your skill level.
+
+## Update `Array` Element Value Using Its Index Number
+
+Let's imagine we have an Array, but we want to update a single value in it.
+
+```ruby
+picnic_ingredients = ["wine", "jalapeños", "donkey feed"]
+```
+
+Yuck. I don't want to eat donkey feed during my picnic. We know that `"donkey
+feed"` is at _index_ `2` in the `Array`. So let's change it with something more
+appetizing (to humans, anyway).
+
+```ruby
+picnic_ingredients[2] = "Belgian chococlate"
+=> "Belgian chococlate"
+```
+
+The return value shows the new value that was entered: `"Belgian chococlate"`.
+
+If we now print out the `Array` using `p` we see:
+
+```ruby
+picnic_ingredients = ["wine", "jalapeños", "Belgian chococlate"]
+```
 
 ## Conclusion
 
