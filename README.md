@@ -236,7 +236,7 @@ It returns `nil`!
 
 The `.push`, `.shift`, `.unshift`, and `.pop` methods are not the only methods
 built-in to arrays, but they are useful to practice and become familiar with. To
-read the full list, check out Ruby's [Array documentation][docs]
+read the full list, check out Ruby's [Array documentation][docs].
 
 ## Conclusion
 
