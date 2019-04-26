@@ -257,16 +257,16 @@ feed"` is at _index_ `2` in the `Array`. So let's change it with something more
 appetizing (to humans, anyway).
 
 ```ruby
-picnic_ingredients[2] = "Belgian chococlate"
-=> "Belgian chococlate"
+picnic_ingredients[2] = "Belgian chocolate"
+=> "Belgian chocolate"
 ```
 
-The return value shows the new value that was entered: `"Belgian chococlate"`.
+The return value shows the new value that was entered: `"Belgian chocolate"`.
 
 If we now print out the `Array` using `p` we see:
 
 ```ruby
-picnic_ingredients = ["wine", "jalapeños", "Belgian chococlate"]
+picnic_ingredients = ["wine", "jalapeños", "Belgian chocolate"]
 ```
 
 ## Conclusion
