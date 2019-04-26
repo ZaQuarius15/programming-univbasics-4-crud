@@ -31,9 +31,9 @@ my_array = Array.new
 #  └── []
 ```
 
-**Advanced:** *Don't worry about the class constructor right now. We'll learn
+**Advanced:** _Don't worry about the class constructor right now. We'll learn
 much more about this later on. We're introducing it briefly here because you may
-encounter this syntax in other resources.*
+encounter this syntax in other resources._
 
 To make an array that isn't empty, you can separate each item, known as an
 _element_, by a `,` ("comma") and wrap all the elements inside `[]` ("square
@@ -70,7 +70,7 @@ elements to an array.
 ### The Shovel Method
 
 The **shovel** method employs the "shovel" operator (`<<`) and allows you to add
-("shovel") items onto the *end* of an array:
+("shovel") items onto the _end_ of an array:
 
 ```ruby
 famous_cats = ["lil' bub", "grumpy cat", "Maru"]
@@ -79,7 +79,6 @@ famous_cats << "nala cat"
 
 puts famous_cats.inspect
 # > ["lil' bub", "grumpy cat", "Maru", "nala cat"]
-
 ```
 
 The shovel method (`<<`) is the preferred syntax for adding elements to an
@@ -87,7 +86,7 @@ array, however you might see other methods used in examples online.
 
 ### The `.push` Method
 
-Calling `.push` on an array with an argument will add that element to the *end*
+Calling `.push` on an array with an argument will add that element to the _end_
 of the array. It has the same effect as the shovel method explained above:
 
 ```ruby
@@ -97,12 +96,11 @@ famous_cats.push("nala cat")
 
 puts famous_cats.inspect
 # > ["lil' bub", "grumpy cat", "Maru", "nala cat"]
-
 ```
 
 ### The `.unshift` Method
 
-To add an element to the *front* of an array, you can call the `.unshift` method
+To add an element to the _front_ of an array, you can call the `.unshift` method
 on it with an argument of the element you wish to add:
 
 ```ruby
@@ -112,14 +110,13 @@ famous_cats.unshift("nala cat")
 
 puts famous_cats.inspect
 # > ["nala cat", "lil' bub", "grumpy cat", "Maru"]
-
 ```
 
 ## Remove Items from an Array
 
 ### The `.pop` Method
 
-Calling `.pop` on an array will remove the *last* item from the *end* of the
+Calling `.pop` on an array will remove the _last_ item from the _end_ of the
 array. The `.pop` method will also supply the removed element as its return:
 
 ```ruby
@@ -134,7 +131,7 @@ puts maru_cat
 
 ### The `.shift` Method
 
-Calling `.shift` on an array will remove the *first* item from the *front* of
+Calling `.shift` on an array will remove the _first_ item from the _front_ of
 the array. The `.shift` method will also supply the removed element as a return:
 
 ```ruby
@@ -167,8 +164,8 @@ index `0`". If we have an array of famous (fictional) cats:
 famous_cats = ["Cheshire Cat", "Puss in Boots", "Garfield"]
 ```
 
-The `"Cheshire Cat"` is at index `0` in the array, `"Puss in Boots"` is  a index
-`1`, and `"Garfield"` is at index `2`. Indexes will always be *one less* than
+The `"Cheshire Cat"` is at index `0` in the array, `"Puss in Boots"` is a index
+`1`, and `"Garfield"` is at index `2`. Indexes will always be _one less_ than
 the **count**.
 
 To access one of these items in the `famous_cats` array, we can type the name of
@@ -201,7 +198,7 @@ famous_cats[-1]
 
 To discover the index number of an element within an array, we can use the
 `.index()` method. Calling `.index()` on an array with an argument inside the
-parentheses will return the *first* index number of an element matching that
+parentheses will return the _first_ index number of an element matching that
 argument. If no elements match the argument, then this method will return `nil`.
 
 ```ruby
@@ -235,6 +232,12 @@ famous_cats[3]
 
 It returns `nil`!
 
+## Additional Information on Arrays
+
+The `.push`, `.shift`, `.unshift`, and `.pop` methods are not the only methods
+built-in to arrays, but they are useful to practice and become familiar with. To
+read the full list, check out Ruby's [Array documentation][docs]
+
 ## Conclusion
 
 Create, retrieve, update, and delete operations are fundamental to working with
@@ -243,4 +246,7 @@ successful programming.
 
 ## Resources
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/W0Q_AyfolRw" frameborder="0" allowfullscreen></iframe><p><a href="https://www.youtube.com/watch?v=W0Q_AyfolRw">Intro to Ruby Arrays</a></p>
+- [Working with Arrays Video][video]
+
+[video]: https://www.youtube.com/embed/W0Q_AyfolRw
+[docs]: https://ruby-doc.org/core-2.5.1/Array.html
