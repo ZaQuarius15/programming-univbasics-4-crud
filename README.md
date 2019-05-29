@@ -58,7 +58,7 @@ arrays populated with only one kind of element.
 
 Remember we're saying that arrays hold collections of similar things: band
 member names, digits of a phone number, etc. Other programmers will likely
-want to visit each _element_. If I'm totalling an array called `prices`, and the
+want to visit each _element_. If I'm totaling an array called `prices`, and the
 `String` `"baby shark"` is inside, I'm not going to get the result I expect when
 I try to add up the total of all the prices.
 
