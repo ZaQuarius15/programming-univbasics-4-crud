@@ -281,4 +281,3 @@ successful programming.
 
 [video]: https://www.youtube.com/embed/W0Q_AyfolRw
 [docs]: https://ruby-doc.org/core-2.5.1/Array.html
-
